@@ -7,7 +7,7 @@
 	<artifactId>opensrp-server-reporting</artifactId>
 	<packaging>jar</packaging>
 
-	<version>1.0.0-SNAPSHOT</version>
+	<version>1.0.0</version>
 
 	<name>opensrp-server-reporting</name>
 	<description>OpenSRP Server reporting module</description>
@@ -353,25 +353,6 @@
 				</executions>
 			</plugin>
 
-			<plugin>
-				<groupId>org.codehaus.mojo</groupId>
-				<artifactId>properties-maven-plugin</artifactId>
-				<version>1.0-alpha-2</version>
-				<executions>
-					<execution>
-						<phase>initialize</phase>
-						<goals>
-							<goal>read-project-properties</goal>
-						</goals>
-						<configuration>
-							<files>
-								<file>${basedir}/configs/build/maven.properties</file>
-								<file>${basedir}/configs/assets/config/opensrp.properties</file>
-							</files>
-						</configuration>
-					</execution>
-				</executions>
-			</plugin>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-surefire-plugin</artifactId>
