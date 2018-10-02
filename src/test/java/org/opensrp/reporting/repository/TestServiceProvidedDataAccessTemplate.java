@@ -10,9 +10,11 @@ import org.springframework.stereotype.Component;
 @Component
 @Scope(value = "prototype")
 public class TestServiceProvidedDataAccessTemplate extends HibernateTemplate {
-    @Autowired
-    public TestServiceProvidedDataAccessTemplate(@Qualifier(value = "serviceProvidedSessionFactory") SessionFactory sessionFactory) {
-        super(sessionFactory);
-        setAllowCreate(true);
-    }
+	
+	@Autowired
+	public TestServiceProvidedDataAccessTemplate(
+	    @Qualifier(value = "serviceProvidedSessionFactory") SessionFactory sessionFactory) {
+		super(sessionFactory);
+		setAllowCreate(true);
+	}
 }

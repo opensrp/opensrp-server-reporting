@@ -10,11 +10,12 @@ import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 @RunWith(SpringJUnit4ClassRunner.class)
 @ContextConfiguration("classpath:spring/applicationContext-opensrp-reporting-test.xml")
 public class ANMReportsIntegrationTestBase {
-    @Autowired
-    protected TestANMReportDataAccessTemplate template;
-    
-    @Test
-    public void test(){
-    	
-    }
+	
+	@Autowired
+	protected TestANMReportDataAccessTemplate template;
+	
+	@Test
+	public void test() {
+		
+	}
 }

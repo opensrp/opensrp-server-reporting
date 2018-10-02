@@ -10,9 +10,10 @@ import org.springframework.stereotype.Component;
 @Component
 @Scope(value = "prototype")
 public class TestANMReportDataAccessTemplate extends HibernateTemplate {
-    @Autowired
-    public TestANMReportDataAccessTemplate(@Qualifier(value = "anmReportsSessionFactory") SessionFactory sessionFactory) {
-        super(sessionFactory);
-        setAllowCreate(true);
-    }
+	
+	@Autowired
+	public TestANMReportDataAccessTemplate(@Qualifier(value = "anmReportsSessionFactory") SessionFactory sessionFactory) {
+		super(sessionFactory);
+		setAllowCreate(true);
+	}
 }
